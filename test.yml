@@ -1,0 +1,7 @@
+- name: playbook to test the tower
+  hosts: all
+  tasks:
+    - name: copy the the content to the target hosts
+      copy:
+        content: "Welcome to the Ansible"
+        dest: /home/devops/test
