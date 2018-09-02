@@ -1,0 +1,14 @@
+- name: this is second yaml file to test workflow
+  hosts: all
+  tasks:
+    - name: this is my first workflow
+      yum:
+        name: check if file is present
+        stat:
+          path: /home/devops/test
+        register: st
+
+    - name: check the status of above path
+      debug:
+        var: st
+        verbosity: 2
