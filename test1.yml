@@ -2,11 +2,12 @@
   hosts: all
   tasks:
     - name: check if file is present
-        stat:
-          path: /home/devops/test
-        register: st
+      stat:
+        path: /home/devops/test
+      register: st
 
     - name: check the status of above path
       debug:
         var: st
         verbosity: 2
+
