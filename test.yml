@@ -6,3 +6,5 @@
         content: "Welcome to the Ansible"
         dest: /home/devops/test
         #########################
+        ####################################
+
