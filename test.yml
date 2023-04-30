@@ -4,7 +4,7 @@
     - name: copy the the content to the target hosts
       copy:
         content: "Welcome to the Ansible New"
-        dest: /home/devops/test
+        dest: /home/devops/test1
         #########################
         ####################################
 
